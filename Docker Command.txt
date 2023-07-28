@@ -1,0 +1,9 @@
+#To run this 2 tier application in docker on your custome bridge/user define bridge network you also need 2 cantainer (One is flask api container and another One is mongo db container).
+
+docker network create <net-n>
+
+docker build -t flask .
+
+docker run -it -p 5000:5000 -d --restart unless-stopped --name flask-service --network <net-n> flask
+
+docker run -it -d --restart unless-stopped --name mongo-service --network <net-n> mongo
