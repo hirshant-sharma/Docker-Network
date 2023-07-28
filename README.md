@@ -2,6 +2,8 @@
 
 This is a microservice application built using Flask and deployed on Kubernetes. It is designed to demonstrate how to build and deploy microservices on a Kubernetes cluster.
 
+#To run this 2 tier application in docker on your custome bridge/user define bridge network you also need 2 cantainer (One is flask api container and another One is mongo db container).
+
 ## Table of Contents
 
 - [Installation](#installation)
